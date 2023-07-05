@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContainer {
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+
+.imageContainer {
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.ok {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.ok:hover {
+    color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
